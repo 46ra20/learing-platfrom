@@ -1,0 +1,9 @@
+[
+    { "category_id":"01", "category_name":" Web Development "},
+    { "category_id":"02", "category_name":" Programming Language "},
+    { "category_id":"03", "category_name":" Artificial Intelligence"},
+    { "category_id":"04", "category_name":"Microsoft Office "},
+    { "category_id":"05", "category_name":" Graphics Design "},
+    { "category_id":"06", "category_name":" Hacking"},
+    {"category_id":"07", "category_name":" All Course"}
+]
