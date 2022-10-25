@@ -20,6 +20,14 @@ app.get('/course/:categoryId',(req, res)=>{
     }
 })
 
+app.get('/course/details/:courseId',(req, res) => {
+    const courseId = req.params.courseId;
+    const findData = courseData.find(course => course.course_id === courseId);
+    if(findData){
+        res.send(findData)
+    }
+})
+
 app.get('/category',(req, res) =>{
     res.send(categoryData)
 })
