@@ -4,8 +4,20 @@ const app = express();
 port = 5000;
 
 const categoryData = require('./data/category.json');
+const courseData = require('./data/fakeData.json');
 
 app.use(cors());
+
+app.get('/course/:categoryId',(req, res)=>{
+    const categoryId = req.params.categoryId;
+    const findData = courseData.filter(course => categoryId === course.category_id )
+    if(categoryId === '07'){
+        res.send(courseData)
+    }
+    else{
+        res.send(findData)
+    }
+})
 
 app.get('/category',(req, res) =>{
     res.send(categoryData)
