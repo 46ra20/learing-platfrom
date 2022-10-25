@@ -11,6 +11,7 @@ app.use(cors());
 app.get('/course/:categoryId',(req, res)=>{
     const categoryId = req.params.categoryId;
     const findData = courseData.filter(course => categoryId === course.category_id )
+    console.log(req.params.categoryId);
     if(categoryId === '07'){
         res.send(courseData)
     }
